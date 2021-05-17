@@ -4,7 +4,8 @@
   "description": "Arquivos das aulas do módulo \"TypeScript - Princípios SOLID (S.O.L.I.D.)\" do curso de JavaScript e TypeScript da Udemy.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:silent": "jest --watchAll --silent --noStackTrace"
   },
   "license": "ISC",
   "devDependencies": {
