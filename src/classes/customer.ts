@@ -5,7 +5,8 @@ import {
 } from './interfaces/customer-protocol';
 
 export class IndividualCustomer
-  implements IndividualCustomerProtocol, CustomerOrder {
+  implements IndividualCustomerProtocol, CustomerOrder
+{
   constructor(
     public firstName: string,
     public lastName: string,
@@ -18,7 +19,8 @@ export class IndividualCustomer
 }
 
 export class EnterpriseCustomer
-  implements EnterpriseCustomerProtocol, CustomerOrder {
+  implements EnterpriseCustomerProtocol, CustomerOrder
+{
   constructor(public name: string, public cnpj: string) {}
 
   public getName = (): string => this.name;

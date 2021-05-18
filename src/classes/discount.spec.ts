@@ -7,7 +7,7 @@ import {
 
 const createSut = (className: new () => Discount): Discount => new className();
 
-describe('Product', () => {
+describe('Discount', () => {
   it('should have no discount', () => {
     const sut = createSut(NoDiscount);
 
