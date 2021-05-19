@@ -1,13 +1,13 @@
 import { CartItem } from './interfaces/cart-item';
 import { parseFloat } from '../services/parseFloat';
 import { ShoppingCartProtocol } from './interfaces/shopping-cart-protocol';
-import { DiscountProtocol } from './interfaces/discount-protocol';
+import { Discount } from './discount';
 
 // Uma classe "boa" é que só tem métodos que utilizam suas propriedades.
 export class ShoppingCart implements ShoppingCartProtocol {
   private readonly _items: CartItem[] = [];
 
-  constructor(private readonly discount: DiscountProtocol) {}
+  constructor(private readonly discount: Discount) {}
 
   public get items(): Readonly<CartItem[]> {
     return this._items;
